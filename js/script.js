@@ -160,3 +160,13 @@ function calc(a, b) {
 
 console.log(calc(5, 8));
 console.log(calc(5, 10));
+
+let hello;
+
+hello = () => {
+    return "World";
+};
+
+let str2 = "Test";
+console.log(str2.length);
+
