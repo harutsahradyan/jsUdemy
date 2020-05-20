@@ -60,7 +60,7 @@ console.log(2 * 4 === "8");
 
 console.log(2 + 2 * 2 != 8);
 
-let numberOfFilms = prompt("How many films did you watch?", " ");
+/*let numberOfFilms = prompt("How many films did you watch?", " ");
 console.log(numberOfFilms);
 
 const personalMoviDB = {
@@ -95,7 +95,7 @@ if (personalMoviDB.count < 10) {
     console.log("error");
 }
 
-console.log(personalMoviDB);
+console.log(personalMoviDB);*/
 
 if (4 == 9) {
     console.log("Hello Miki");
