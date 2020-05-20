@@ -81,5 +81,51 @@ personalMoviDB.movies[c] = d;
 
 console.log (personalMoviDB);*/
 
+if (4 == 9) {
+    console.log("Hello Miki");
+} else {
+    console.log("Minion");
+}
+
+let num = 80;
+
+if (num > 100) {
+    console.log("Mini cuper");
+} else if (num < 200) {
+    console.log("biblio");
+} else {
+    console.log(20);
+}
+
+//(num > 25) ? console.log("Bomb"): console.log("Mimo");
+
+let kiko = 200;
+
+switch (kiko) {
+    case 30:
+        console.log("Hello Gogo");
+        break;
+    case 25:
+        console.log("mini");
+        break;
+    case 25:
+        console.log("mini");
+        break;
+    default:
+        console.log("Great !!!");
+}
 
 
+
+/*do {
+    console.log(num2);
+    num2++;
+}
+while (num2 <= 55);*/
+
+let num2 = 40;
+
+for (let i = 1; i < 8; i++) {
+    if(i==4){continue;}
+    console.log(i);
+}
