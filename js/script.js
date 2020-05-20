@@ -59,3 +59,25 @@ console.log(10 + 10);
 console.log(2 * 4 === "8");
 
 console.log(2 + 2 * 2 != 8);
+
+/*let numberOfFilms = prompt("How many films did you watch?", " ");
+console.log(numberOfFilms);
+
+const personalMoviDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    geners: [],
+    privet: false
+};
+
+const a = prompt("One of movies that you watch?", ""),
+      b = prompt("How do you like it?", ""),
+      c = prompt("One of movies that you watch?", ""),
+      d = prompt("How do you like it?", "");
+
+personalMoviDB.movies[a] = b;
+personalMoviDB.movies[c] = d;
+
+console.log (personalMoviDB);*/
+
