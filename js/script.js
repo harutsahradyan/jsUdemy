@@ -147,3 +147,9 @@ for (let i = 1; i < 8; i++) {
     }
     console.log(i);
 }
+
+function forName() {
+    console.log("Hello");
+}
+
+forName();
