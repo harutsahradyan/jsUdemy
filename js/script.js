@@ -148,8 +148,15 @@ for (let i = 1; i < 8; i++) {
     console.log(i);
 }
 
-function forName() {
-    console.log("Hello");
+function forName(text) {
+    console.log(text);
 }
 
-forName();
+forName("Hello");
+
+function calc(a, b) {
+    return (a + b);
+}
+
+console.log(calc(5, 8));
+console.log(calc(5, 10));
