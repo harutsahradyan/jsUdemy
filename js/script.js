@@ -60,7 +60,7 @@ console.log(2 * 4 === "8");
 
 console.log(2 + 2 * 2 != 8);
 
-/*let numberOfFilms = prompt("How many films did you watch?", " ");
+let numberOfFilms = prompt("How many films did you watch?", " ");
 console.log(numberOfFilms);
 
 const personalMoviDB = {
@@ -71,15 +71,31 @@ const personalMoviDB = {
     privet: false
 };
 
-const a = prompt("One of movies that you watch?", ""),
-      b = prompt("How do you like it?", ""),
-      c = prompt("One of movies that you watch?", ""),
-      d = prompt("How do you like it?", "");
+for (let ii = 0; ii < 2; ii++) {
+    const a = prompt("One of movies that you watch?", ""),
+        b = prompt("How do you like it?", "");
 
-personalMoviDB.movies[a] = b;
-personalMoviDB.movies[c] = d;
+    if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+        personalMoviDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        ii--;
+    }
 
-console.log (personalMoviDB);*/
+}
+
+if (personalMoviDB.count < 10) {
+    console.log("You watched very few fom.");
+} else if (personalMoviDB.count >= 10 && personalMoviDB.count < 30) {
+    console.log("You are a classic watcher.");
+} else if (personalMoviDB.count >= 30) {
+    console.log("you are a movie fan");
+} else {
+    console.log("error");
+}
+
+console.log(personalMoviDB);
 
 if (4 == 9) {
     console.log("Hello Miki");
@@ -126,6 +142,8 @@ while (num2 <= 55);*/
 let num2 = 40;
 
 for (let i = 1; i < 8; i++) {
-    if(i==4){continue;}
+    if (i == 4) {
+        continue;
+    }
     console.log(i);
 }
