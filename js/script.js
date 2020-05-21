@@ -240,3 +240,15 @@ function checkStatus () {
 console.log(staffLife);
 
 checkStatus ();*/
+
+//Callback function example
+function learnJs(lang, callback) {
+    console.log(`I am lerning ${lang}`);
+    callback();
+}
+
+function done() {
+    console.log("I passed this lesson !");
+}
+
+learnJs('JavaScript', done);
