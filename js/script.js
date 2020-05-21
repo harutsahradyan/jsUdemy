@@ -60,8 +60,20 @@ console.log(2 * 4 === "8");
 
 console.log(2 + 2 * 2 != 8);
 
-/*let numberOfFilms = prompt("How many films did you watch?", " ");
-console.log(numberOfFilms);
+/*ստորև start() ֆունկցիան կոդը ցույց է տալիս, որ եթե +prompt դաշտը դատարկ է մնացե կամ օգտա․ 
+սեղմել է Չեղարկել կամ ոչ թիվ ապա "How many films did you watch?" արտահայտությունը անընդհատ կրկնի։*/
+
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt("How many films did you watch?", " ");
+
+    while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt("How many films did you watch?", " ");
+    }
+}
+
+start();
 
 const personalMoviDB = {
     count: numberOfFilms,
@@ -71,31 +83,61 @@ const personalMoviDB = {
     privet: false
 };
 
-for (let ii = 0; ii < 2; ii++) {
-    const a = prompt("One of movies that you watch?", ""),
-        b = prompt("How do you like it?", "");
 
-    if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-        personalMoviDB.movies[a] = b;
-        console.log('done');
-    } else {
-        console.log('error');
-        ii--;
+
+function rememberMyFilms() {
+    for (let ii = 0; ii < 2; ii++) {
+        const a = prompt("One of movies that you watch?", ""),
+            b = prompt("How do you like it?", "");
+
+        if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+            personalMoviDB.movies[a] = b;
+            console.log('done');
+        } else {
+            console.log('error');
+            ii--;
+        }
+
     }
+}
+rememberMyFilms();
 
+
+function detectPersonalLevel() {
+    if (personalMoviDB.count < 10) {
+        console.log("You watched very few fom.");
+    } else if (personalMoviDB.count >= 10 && personalMoviDB.count < 30) {
+        console.log("You are a classic watcher.");
+    } else if (personalMoviDB.count >= 30) {
+        console.log("you are a movie fan");
+    } else {
+        console.log("error");
+    }
 }
 
-if (personalMoviDB.count < 10) {
-    console.log("You watched very few fom.");
-} else if (personalMoviDB.count >= 10 && personalMoviDB.count < 30) {
-    console.log("You are a classic watcher.");
-} else if (personalMoviDB.count >= 30) {
-    console.log("you are a movie fan");
-} else {
-    console.log("error");
+detectPersonalLevel();
+
+function showMyDB(hidden) {
+    if (!hidden) {
+        console.log(personalMoviDB);
+    }
 }
 
-console.log(personalMoviDB);*/
+showMyDB(personalMoviDB.privet);
+
+/* Այս ֆունկցիան հնարավոր․ է տալիս 3 անգամ 
+հարցնելով ճշտել ֆիլմի սիրված ժանրերը, ինդեքսավորումը 
+սկսում նեք 1-ից քանի որ օգտատիրոջ համար 0 նշանակ․ չունի, 
+բայց personalMoviDB.geners-ում տողերը լցնելու համար անում ենք
+pp-1 որպեսզի array-ում ճիշտ ինդեքսավորում ստանանք՝ 0-ով սկսվող։
+*/ 
+function writeYourGenres() {
+    for (let pp = 1; pp <= 3; pp++) {
+        const genre = prompt(`Ваш любимый жанр под номером ${pp}`);
+        personalMoviDB.geners[pp - 1] = genre;
+    }
+}
+writeYourGenres();
 
 if (4 == 9) {
     console.log("Hello Miki");
@@ -178,5 +220,3 @@ console.log(fruit.slice(5));
 
 const num25 = 12.2;
 console.log(Math.round(num25));
-
-
