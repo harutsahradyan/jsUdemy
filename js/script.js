@@ -60,10 +60,14 @@ console.log(2 * 4 === "8");
 
 console.log(2 + 2 * 2 != 8);
 
+
+
+//JS Նախագիծ, Udemy.com
+
 /*ստորև start() ֆունկցիան կոդը ցույց է տալիս, որ եթե +prompt դաշտը դատարկ է մնացե կամ օգտա․ 
 սեղմել է Չեղարկել կամ ոչ թիվ ապա "How many films did you watch?" արտահայտությունը անընդհատ կրկնի։*/
 
-let numberOfFilms;
+/*let numberOfFilms;
 
 function start() {
     numberOfFilms = +prompt("How many films did you watch?", " ");
@@ -125,19 +129,19 @@ function showMyDB(hidden) {
 
 showMyDB(personalMoviDB.privet);
 
-/* Այս ֆունկցիան հնարավոր․ է տալիս 3 անգամ 
-հարցնելով ճշտել ֆիլմի սիրված ժանրերը, ինդեքսավորումը 
-սկսում նեք 1-ից քանի որ օգտատիրոջ համար 0 նշանակ․ չունի, 
-բայց personalMoviDB.geners-ում տողերը լցնելու համար անում ենք
-pp-1 որպեսզի array-ում ճիշտ ինդեքսավորում ստանանք՝ 0-ով սկսվող։
-*/ 
+//Այս ֆունկցիան հնարավոր․ է տալիս 3 անգամ 
+//հարցնելով ճշտել ֆիլմի սիրված ժանրերը, ինդեքսավորումը 
+//սկսում նեք 1-ից քանի որ օգտատիրոջ համար 0 նշանակ․ չունի, 
+//բայց personalMoviDB.geners-ում տողերը լցնելու համար անում ենք
+//pp-1 որպեսզի array-ում ճիշտ ինդեքսավորում ստանանք՝ 0-ով սկսվող։
+
+
 function writeYourGenres() {
     for (let pp = 1; pp <= 3; pp++) {
-        const genre = prompt(`Ваш любимый жанр под номером ${pp}`);
-        personalMoviDB.geners[pp - 1] = genre;
+        personalMoviDB.geners[pp - 1] = prompt(`Ваш любимый жанр под номером ${pp}`);
     }
 }
-writeYourGenres();
+writeYourGenres();*/
 
 if (4 == 9) {
     console.log("Hello Miki");
@@ -220,3 +224,19 @@ console.log(fruit.slice(5));
 
 const num25 = 12.2;
 console.log(Math.round(num25));
+
+/*const staffLife = {
+    age: {},
+    name: {},
+    nationality:[],
+    year: true
+};
+
+function checkStatus () {
+    for(let gg=1; gg<=4; gg++) {
+        staffLife.nationality[gg-1] = prompt(`Your nationality ${gg}`);
+    }
+}
+console.log(staffLife);
+
+checkStatus ();*/
