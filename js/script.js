@@ -169,4 +169,14 @@ hello = () => {
 
 let str2 = "Test";
 console.log(str2.length);
+console.log(str2.toLocaleUpperCase());
+
+const fruit = "Some fruit";
+console.log(fruit.indexOf("q"));
+
+console.log(fruit.slice(5));
+
+const num25 = 12.2;
+console.log(Math.round(num25));
+
 
