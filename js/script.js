@@ -271,8 +271,8 @@ const options = {
 
 for (let key in options) {
     if (typeof (options[key]) === 'object') {
-        for (let h in options[key]) {
-            console.log(`Option ${h} has value ${options[key][h]}`);
+        for (let k in options[key]) {
+            console.log(`Option ${k} has value ${options[key][k]}`);
         }
     } else {
         console.log(`Option ${key} has value ${options[key]}`);
