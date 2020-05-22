@@ -278,3 +278,7 @@ for (let key in options) {
         console.log(`Option ${key} has value ${options[key]}`);
     }
 }
+
+//key-ն դա options-ի property-ներն են
+//k-ն այս դեպքում colors:-ի մեջի property-ներն են
+
