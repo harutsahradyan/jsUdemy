@@ -60,7 +60,7 @@ console.log(2 * 4 === "8");
 
 console.log(2 + 2 * 2 != 8);
 
-
+//------------------------------------------------
 
 //JS Նախագիծ, Udemy.com
 
@@ -241,6 +241,8 @@ console.log(staffLife);
 
 checkStatus ();*/
 
+//------------------------------------------------
+
 //Callback function example
 function learnJs(lang, callback) {
     console.log(`I am lerning ${lang}`);
@@ -252,6 +254,8 @@ function done() {
 }
 
 learnJs('JavaScript', done);
+
+//------------------------------------------------
 
 //objects for/in and for/of statements
 
@@ -293,13 +297,32 @@ console.log(Object.keys(options));
 
 options.makeTest();
 
+//------------------------------------------------
 
 //деструктуризация объектов (ES6)
 
-const{border, bg} = options.colors;
+const {
+    border,
+    bg
+} = options.colors;
 console.log(border);
 
 //деструктуризация объектов (ES6)
 
+//--------------------------------------------------
 
+//JS Array Methods
 
+const arr3 = [1, 2, 3, 6, 8];
+
+//arr3.pop();
+
+//console.log(arr3);
+
+//arr3.push(10);
+
+//console.log(arr3);
+
+for (let u = 0; u < arr3.length; u++) {
+    console.log(arr3[u]);
+}
