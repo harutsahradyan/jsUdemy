@@ -299,4 +299,6 @@ options.makeTest();
 const{border, bg} = options.colors;
 console.log(border);
 
+//деструктуризация объектов (ES6)
+
 
