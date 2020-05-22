@@ -252,3 +252,29 @@ function done() {
 }
 
 learnJs('JavaScript', done);
+
+//objects for/in and for/of statements
+
+const options = {
+    name: "test",
+    width: 1024,
+    height: 1000,
+    colors: {
+        border: 'black',
+        bg: "red"
+    }
+};
+
+/*for(let key in options){
+    console.log(`Option ${key} has value ${options[key]}`);
+}*/
+
+for (let key in options) {
+    if (typeof (options[key]) === 'object') {
+        for (let h in options[key]) {
+            console.log(`Option ${h} has value ${options[key][h]}`);
+        }
+    } else {
+        console.log(`Option ${key} has value ${options[key]}`);
+    }
+}
