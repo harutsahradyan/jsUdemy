@@ -300,6 +300,6 @@ const{border, bg} = options.colors;
 console.log(border);
 
 
-//деструктуризация объектов (ES6)
 
+//деструктуризация объектов (ES6)
 
