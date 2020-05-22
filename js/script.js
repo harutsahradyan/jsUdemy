@@ -262,6 +262,9 @@ const options = {
     colors: {
         border: 'black',
         bg: "red"
+    },
+    makeTest: function () {
+        console.log("Test");
     }
 };
 
@@ -281,4 +284,21 @@ for (let key in options) {
 
 //key-ն դա options-ի property-ներն են
 //k-ն այս դեպքում colors:-ի մեջի property-ներն են
+
+//object- մեթոդներ
+console.log(Object.keys(options));
+
+//Object.keys()- js-ի կողմից արդեն սահմանաված մեթոդ է, սակայն հնարավոր
+// է ինքնուրույն ստեղծել մեթոդներ։
+
+options.makeTest();
+
+
+//деструктуризация объектов (ES6)
+
+const{border, bg} = options.colors;
+console.log(border);
+
+
+
 
