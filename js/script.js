@@ -326,3 +326,18 @@ const arr3 = [1, 2, 3, 6, 8];
 for (let u = 0; u < arr3.length; u++) {
     console.log(arr3[u]);
 }
+
+const arr9 = [1, 5, 6, 4];
+console.log(arr9.length);
+
+/*Metod forEach - աշխատացնումա իր մեջի քոլԲեք ֆունկցիան
+ զանգվածի մեջի յուրաք․ տարի համար մեկ անգամ և հերթով*/
+
+arr9.forEach(function (item, ff, arr9) {
+    console.log(`${ff}: ${item} inside of ${arr9}`);
+});
+
+//item - 1,5,6,4
+//ff- ինդեքս
+//arr9 - մասիվի անուննա
+
