@@ -114,7 +114,13 @@ const personalMoviDB = {
             console.log(personalMoviDB);
         }
     },
-
+    toggleVisibleMyDB: function () {
+        if (personalMoviDB.privet) {
+            personalMoviDB.privet = false;
+        } else {
+            personalMoviDB.privet = true;
+        }
+    },
     writeYourGenres: function () {
         for (let pp = 1; pp <= 3; pp++) {
             personalMoviDB.geners[pp - 1] = prompt(`Ваш любимый жанр под номером ${pp}`);
