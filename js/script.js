@@ -74,7 +74,7 @@ const personalMoviDB = {
     count: 0,
     movies: {},
     actors: {},
-    geners: [],
+    genres: [],
     privet: false,
     start: function () {
         numberOfFilms.count = +prompt("How many films did you watch?", " ");
@@ -123,8 +123,18 @@ const personalMoviDB = {
     },
     writeYourGenres: function () {
         for (let pp = 1; pp <= 3; pp++) {
-            personalMoviDB.geners[pp - 1] = prompt(`Ваш любимый жанр под номером ${pp}`);
+            let genre = prompt(`Ваш любимый жанр под номером ${pp}`);
+            if (genre === "" || genre == null) {
+                console.log("Please enter the right info");
+                pp--;
+            } else {
+                personalMoviDB.genres[pp - 1] = genre;
+            }
         }
+
+        personalMoviDB.genres.forEach((item, pp) => {
+            console.log(`Favorite genre ${pp+1} - it is ${item}`);
+        });
     }
 };
 
