@@ -337,3 +337,10 @@ arr9.forEach(function (item, ff, arr9) {
 //item - 1,5,6,4
 //ff- ինդեքս
 //arr9 - մասիվի անուննա
+
+//To String - դարձնում ենք ՏՈՂ
+
+const num11 = 12;
+
+console.log ("https:// vk.ru/films/" + num11);
+
