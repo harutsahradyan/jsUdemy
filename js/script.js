@@ -344,3 +344,17 @@ const num11 = 12;
 
 console.log ("https:// vk.ru/films/" + num11);
 
+//To Number - դարձնում ենք ԹԻՎ
+
+console.log(typeof(Number("4")));
+
+console.log(typeof(+"10"));
+
+/*let answ = +prompt("Hello", '');
+console.log(answ);*/
+
+//user-ի կողմից ստացված ցանկացած տվյալ դա ՏՈՂ է և երբեմն կարիք է լինում 
+// այս տվյալները փոխել այլ DataType -ի, օր․՝ number
+
+
+
