@@ -342,13 +342,13 @@ arr9.forEach(function (item, ff, arr9) {
 
 const num11 = 12;
 
-console.log ("https:// vk.ru/films/" + num11);
+console.log("https:// vk.ru/films/" + num11);
 
 //To Number - դարձնում ենք ԹԻՎ
 
-console.log(typeof(Number("4")));
+console.log(typeof (Number("4")));
 
-console.log(typeof(+"10"));
+console.log(typeof (+"10"));
 
 /*let answ = +prompt("Hello", '');
 console.log(answ);*/
@@ -356,5 +356,43 @@ console.log(answ);*/
 //user-ի կողմից ստացված ցանկացած տվյալ դա ՏՈՂ է և երբեմն կարիք է լինում 
 // այս տվյալները փոխել այլ DataType -ի, օր․՝ number
 
+//To Boolean
 
+let switcher = null;
 
+if (switcher) {
+    console.log("working...");
+}
+
+switcher = 1;
+
+if (switcher) {
+    console.log("working...");
+}
+
+console.log(typeof ([] + false));
+
+/*let y = 1; 
+let x = y = 2; 
+alert(x); */
+
+console.log([] + 1 + 2);
+
+//alert( "1"[0] );
+
+console.log(2 && 1 && null && 0 && undefined);
+console.log((1 && 2));
+
+//alert( null || 2 && 3 || 4 ); 
+
+console.log(3 || 4);
+
+const a = [1, 2, 3];
+const b = [1, 2, 3];
+console.log(a == b);
+
+console.log(+"20");
+
+console.log("hello" > "minas");
+
+console.log(0 || "" || 2 || undefined || true || false);
